@@ -1,0 +1,167 @@
+@font-face 
+  font-family: 'Bernadette'
+  src: url(../fonts/bernadette.ttf) format("truetype")
+  font-weight: normal 
+  font-style: normal 
+body 
+  font-family: 'Lato',sans-serif 
+  min-width: 320px
+  color: #040404 
+img 
+  max-width: 100% 
+  height: auto 
+h2 
+  font-family: 'Bernadette', sans-serif
+  color: #333332 
+  font-size: 50px
+h5 
+  font-family: 'Lato'
+  color: #515151
+
+/*header*/
+
+.main-header
+  background: url(../img/HeaderBG.jpg) center no-repeat
+  background-size: cover
+  background-position-y: bottom
+  height: 100vh
+  min-height: 600px
+  width: 100%
+
+.main-header-text
+  h2,h5,p
+    color: #fff
+
+.main-header
+  .nav-item a
+    font-family: 'Lato'
+    color: #fff
+    text-transform: uppercase
+    font-weight: bold
+    font-size: 15px
+  li
+    margin: 0 10px
+  ul li a
+    &::after
+      content: ''
+      display: block
+      width: 100%
+      background-color: #ffffff
+      height: 2px
+      transform: scale(0)
+      transition: all 0.4s
+    &:hover::after
+      transform: scale(1)
+
+.main-header-text
+  text-align: center
+  margin-top: 12vh
+  max-height: 90vh
+  color: #fff
+  padding: 20px
+  max-width: 780px
+  h2
+    font-size: 80px
+  h5
+    font-size: 30px
+  > *
+    margin-bottom: 30px
+
+.btn
+  font-size: 16px
+
+.main-header-button .btn
+  height: 40px
+  min-width: 150px
+
+.btn-white
+  background: #fff
+  color: #040404
+  font-weight: bold
+  text-transform: uppercase
+
+.cards
+  margin-top: -25vh
+  .card
+    padding: 0
+    border: 0
+    border-radius: 15px
+    min-width: 12rem
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+    margin-bottom: 30px
+    img
+      width: 100%
+      border-radius: 15px 15px 0 0
+    .card-title
+      color: #333332
+      text-align: center
+      font-weight: bold
+      font-size: 25px
+    .card-text
+      color: #040404
+      font-size: 16px
+      text-align: center
+      font-weight: lighter
+      max-width: 80%
+      margin: auto
+      
+
+.btn-gradient
+  height: 40px
+  border: 0
+  border-radius: 25px
+  background: linear-gradient(90deg, rgb(222, 129, 60) 0%, rgb(63, 81, 154) 100%)
+  width: 125px
+  margin: auto
+  margin-bottom: -15px
+  color: #ffffff
+  text-transform: uppercase
+  font-weight: bold
+  font-size: 15px
+
+.section-we-are
+  margin-top: 100px
+  color: #040404
+  height: 50vh
+  h4
+    font-family: 'Bernadette'
+    font-size: 50px
+    margin-bottom: 55px
+    color: #333332
+  span
+    font-weight: bold
+  p
+    font-weight: lighter
+  img
+    width: 50%
+    left: 50%
+    margin-left: -25%
+  .row
+    div
+      font-size: 18px
+
+@media only screen and (max-width: 450px)
+  .main-header-text
+    h2
+      font-size: 50px
+    h5
+      font-size: 25px
+  .btn-gradient
+    font-size: 10px
+  .cards
+    margin-top: -15vh
+
+@media only screen and (max-width: 320px)
+  .main-header-text
+    h2
+      font-size: 40px
+    h5
+      font-size: 20px
+    p
+      font-size: 15px
+  .cards
+    margin-top: -5vh
+
+@media only screen and (max-height: 768px)
+  .cards
+    margin-top: -10vh
