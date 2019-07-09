@@ -160,7 +160,6 @@ h5 {
 .section-we-are {
   margin-top: 100px;
   color: #040404;
-  height: 50vh;
 }
 
 .section-we-are h4 {
@@ -188,6 +187,10 @@ h5 {
   font-size: 18px;
 }
 
+.section-amazing-features {
+  margin-top: 150px;
+}
+
 @media only screen and (max-width: 450px) {
   .main-header-text h2 {
     font-size: 50px;
@@ -200,6 +203,9 @@ h5 {
   }
   .cards {
     margin-top: -15vh;
+  }
+  .section-amazing-features {
+    margin-top: 0;
   }
 }
 
