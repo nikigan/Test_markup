@@ -3,6 +3,8 @@
   src: url(../fonts/bernadette.ttf) format("truetype")
   font-weight: normal 
   font-style: normal 
+html
+  scroll-behavior: smooth
 body 
   font-family: 'Lato',sans-serif 
   min-width: 320px
@@ -31,12 +33,16 @@ h5
   height: 100vh
   min-height: 600px
   width: 100%
-  .nav-item a
-    font-family: 'Lato'
-    color: #fff
-    text-transform: uppercase
-    font-weight: bold
-    font-size: 15px
+  .navbar-collapse
+    max-height: 5vh
+  .nav-item
+    a
+      font-family: 'Lato'
+      color: #fff
+      text-transform: uppercase
+      font-weight: bold
+      font-size: 15px
+    
   li
     margin: 0 10px
   ul li a
