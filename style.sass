@@ -141,11 +141,10 @@ h5
 .section-amazing-features
   margin-top: 100px
   text-align: center
-  h1
-    font-size: 3vw
+  min-height: 40vh
   p
     display: block
-    font-size: 1vw
+    font-size: 16px
     margin: auto
     max-width: 90%
     padding-bottom: 20px
@@ -155,6 +154,7 @@ h5
   img
     margin-bottom: 40px
   .center-block
+    position: absolute
     border-radius: 10px
     max-height: 50%
     left: 50%
@@ -195,3 +195,11 @@ h5
 @media only screen and (max-height: 768px)
   .cards
     margin-top: -10vh
+
+@media only screen and (max-width: 992px)
+  .section-amazing-features
+    .center-block
+      position: static
+      margin: auto
+      max-width: 100%
+      max-height: 80vh
