@@ -33,8 +33,7 @@ h5
   height: 100vh
   min-height: 600px
   width: 100%
-  .navbar-collapse
-    max-height: 5vh
+  user-select: none
   .nav-item
     a
       font-family: 'Lato'
@@ -171,6 +170,52 @@ h5
     background: #fff
     padding: 25px 20px
 
+.section-services
+  margin-top: 30px
+  background: url("../img/service_bg.jpg") no-repeat
+  background-size: cover
+  background-position-x: right
+  position: relative
+  min-height: 70vh
+  padding: 30px 0
+  .text
+    max-height: 10%
+  button
+    margin-left: 10px
+  h1
+    margin-bottom: 30px
+    display: inline-block
+    max-width: 250px
+  p
+    margin-bottom: 30px
+    font-size: 16px
+  span
+    font-weight: bolder
+  .gradient-block
+    background-image: linear-gradient( 135deg, rgb(222,129,60) 0%, rgb(63,81,154) 100%)
+    max-width: 300px
+    border-radius: 10px
+    position: absolute
+    left: 68%
+    margin-left: -25%
+    top: 50%
+    margin-top: -15%
+    .container
+      height: 100%
+      padding: 30px 15px
+    .row
+      height: 100%
+    .col-6
+      text-align: center
+      margin: auto
+      padding: 10px 0
+      // &:nth-child(odd)
+      //   border-right: .5px dotted #fff
+      // &:nth-child(even)
+      //   border-left: .5px dotted #fff
+      // &:not(:nth-last-child(-n+2))
+      //   border-bottom: .5px dotted #fff
+
 
 @media only screen and (max-width: 450px)
   .main-header-text
@@ -201,6 +246,8 @@ h5
 @media only screen and (max-height: 768px)
   .cards
     margin-top: -10vh
+  .section-amazing-features
+    
 
 @media only screen and (max-width: 992px)
   .section-amazing-features
@@ -209,3 +256,10 @@ h5
       margin: auto
       max-width: 100%
       max-height: 80vh
+  .section-services
+    background: #fff
+    .gradient-block, .text
+      text-align: center
+      position: static
+      margin: auto
+      margin-top: 40px
