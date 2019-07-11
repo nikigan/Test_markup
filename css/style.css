@@ -199,7 +199,7 @@ h5 {
 .section-amazing-features {
   margin-top: 100px;
   text-align: center;
-  min-height: 40vh;
+  max-height: 800px;
 }
 
 .section-amazing-features p {
@@ -232,12 +232,15 @@ h5 {
 
 .section-services {
   margin-top: 30px;
-  background: url("../img/service_bg.jpg") no-repeat;
-  background-size: cover;
-  background-position-x: right;
+  background-color: #F4F4F4;
   position: relative;
-  min-height: 70vh;
+  min-height: 500px;
+  max-height: 800px;
   padding: 30px 0;
+}
+
+.section-services .row {
+  max-width: 100%;
 }
 
 .section-services .text {
@@ -268,10 +271,11 @@ h5 {
   max-width: 300px;
   border-radius: 10px;
   position: absolute;
-  left: 68%;
+  left: 74%;
   margin-left: -25%;
   top: 50%;
   margin-top: -15%;
+  z-index: 2;
 }
 
 .section-services .gradient-block .container {
@@ -287,6 +291,16 @@ h5 {
   text-align: center;
   margin: auto;
   padding: 10px 0;
+}
+
+.section-services .image {
+  background: url("../img/service.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+  right: 0;
+  top: 0;
+  height: 100%;
 }
 
 @media only screen and (max-width: 450px) {
