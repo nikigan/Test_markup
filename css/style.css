@@ -355,6 +355,49 @@ h5 {
   min-height: 200px;
 }
 
+.section-designer {
+  position: relative;
+  margin-top: 50px;
+  min-height: 600px;
+  font-size: 16px;
+}
+
+.section-designer .container {
+  max-height: 500px;
+}
+
+.section-designer h1 {
+  margin-top: 50px;
+}
+
+.section-designer .bars span {
+  width: 20%;
+  text-align: center;
+  font-weight: bold;
+  vertical-align: middle;
+}
+
+.section-designer .bars h5 {
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.section-designer .bars .progress-bar {
+  border-radius: 30px;
+  height: 10px;
+  width: 80%;
+  background: -webkit-gradient(linear, left top, right top, from(#de813c), to(#3f519a));
+  background: linear-gradient(90deg, #de813c 0%, #3f519a 100%);
+}
+
+.section-designer .bars .bg-gray {
+  margin-top: -7px;
+  display: block;
+  width: 100%;
+  background: #e0e0e0;
+}
+
 @media only screen and (max-width: 450px) {
   .main-header-text h2 {
     font-size: 50px;
