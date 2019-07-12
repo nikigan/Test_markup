@@ -394,7 +394,8 @@ section {
 .section-designer .bars .progress-bar {
   border-radius: 30px;
   height: 10px;
-  width: 80%;
+  -webkit-transition: width 0.7s;
+  transition: width 0.7s;
   background: -webkit-gradient(linear, left top, right top, from(#de813c), to(#3f519a));
   background: linear-gradient(90deg, #de813c 0%, #3f519a 100%);
 }
@@ -402,7 +403,6 @@ section {
 .section-designer .bars .bg-gray {
   margin-top: -7px;
   display: block;
-  width: 100%;
   background: #e0e0e0;
 }
 
@@ -461,6 +461,52 @@ section {
   text-decoration: none;
   color: #040404;
   cursor: pointer;
+}
+
+.section-offer {
+  position: relative;
+  min-height: 600px;
+}
+
+.section-offer .bg-gray {
+  background: #f4f4f4;
+}
+
+.section-offer .gradient-block {
+  background: linear-gradient(135deg, #de813c 0%, #3f519a 100%);
+}
+
+.section-offer .top {
+  z-index: 1;
+  padding: 70px 0;
+  min-height: 600px;
+}
+
+.section-offer .bot {
+  z-index: -1;
+  position: absolute;
+}
+
+.section-offer .white {
+  background: #ffffff;
+}
+
+.section-offer .gradient {
+  background: linear-gradient(135deg, #de813c 0%, #3f519a 100%);
+}
+
+[data-aos="grow"] {
+  width: 0;
+  -webkit-transition-property: width;
+  transition-property: width;
+}
+
+[data-aos="grow"].aos-animate {
+  width: 80%;
+}
+
+[data-aos="grow"].aos-animate.bg-gray {
+  width: 100%;
 }
 
 @media only screen and (max-width: 450px) {
@@ -527,6 +573,9 @@ section {
   .section-designer .girl {
     position: static;
     min-height: 600px;
+  }
+  .section-offer .bot {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */

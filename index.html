@@ -5,6 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,500,600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="aos-master/dist/aos.css">
 	<link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css">
 	<link rel="stylesheet" href="css/style.css">
 	<script src="https://kit.fontawesome.com/3decd6760e.js"></script>
@@ -65,7 +66,7 @@
 		</div>
 	</header>
 
-	<section class="cards">
+	<section class="cards" data-aos="fade-up">
 		<div class="card-deck container mx-auto mt-md-4">
 			<div class="row align-items-center justify-content-center">
 				<div class="col-10 col-lg-4">
@@ -108,7 +109,7 @@
 		</div>
 	</section>
 
-	<section class="section-we-are">
+	<section class="section-we-are" data-aos="fade-down">
 		<div class="container position-relative">
 			<div class="row">
 				<div class="col-12 col-lg-4 mr-lg-auto ml-lg-0 mx-auto">
@@ -271,17 +272,17 @@
 				</p>
 				<div class="bars container-fluid p-0">
 					<h5>Creativity</h5>
-					<div class="progress-bar d-inline-block" role="progressbar"></div>
-					<div class="progress-bar bg-gray position-relative" role="progressbar"><span
-							class="d-block position-absolute">80%</span></div>
+					<div class="progress-bar d-inline-block" role="progressbar" data-aos="grow" data-aos-anchor=".bars"></div>
+					<div class="progress-bar bg-gray position-relative" role="progressbar" data-aos="grow" data-aos-anchor=".bars"><span
+							class="d-block position-absolute" data-aos="fade-in" data-aos-anchor=".bars">80%</span></div>
 					<h5>Team work</h5>
-					<div class="progress-bar d-inline-block" role="progressbar"></div>
-					<div class="progress-bar bg-gray position-relative" role="progressbar"><span
-							class="d-block position-absolute">80%</span></div>
+					<div class="progress-bar d-inline-block" role="progressbar" data-aos="grow" data-aos-anchor=".bars"></div>
+					<div class="progress-bar bg-gray position-relative" role="progressbar" data-aos="grow" data-aos-anchor=".bars"><span
+							class="d-block position-absolute" data-aos="fade-in" data-aos-anchor=".bars">80%</span></div>
 					<h5>Desiging</h5>
-					<div class="progress-bar d-inline-block" role="progressbar"></div>
-					<div class="progress-bar bg-gray position-relative" role="progressbar"><span
-							class="d-block position-absolute">80%</span></div>
+					<div class="progress-bar d-inline-block" role="progressbar" data-aos="grow" data-aos-anchor=".bars"></div>
+					<div class="progress-bar bg-gray position-relative" role="progressbar" data-aos="grow" data-aos-anchor=".bars"><span
+							class="d-block position-absolute" data-aos="fade-in" data-aos-anchor=".bars">80%</span></div>
 				</div>
 			</div>
 			<div class="col-lg-7 col-12 mt-5 mt-lg-0 mx-auto p-0">
@@ -315,16 +316,31 @@
 		</div>
 	</section>
 
-	<section class="section-offer">
-		<div class="row mx-auto">
-			
+	<!-- <section class="section-offer">
+		<div class="row mx-auto w-100 bot">
+			<div class="col-12 h-100 col-md-5 col-lg-4 gradient-block"></div>
+			<div class="col-12 h-100 col-md-7 col-lg-8 bg-gray"></div>
 		</div>
-	</section>
+		<div class="row mx-auto w-100 top">
+				<div class="offset-1 h-100 col-8 col-md-4 col-lg-3 white">
+					<h1>Professional</h1>
+					<h2>Website design</h2>
+
+				</div>
+				<div class="offset-3 offset-md-0 col-9 h-100 col-md-4 col-lg-3 gradient"></div>
+		</div>
+	</section> -->
 
 
 	<script src="js/jquery-3.3.1.slim.min.js"></script>
 	<script src="js/popper.min.js"></script>
 	<script src="bootstrap/dist/js/bootstrap.js"></script>
+	<script src="aos-master/dist/aos.js"></script>
+	<script>
+		AOS.init({
+			duration: 800
+		})
+	</script>
 </body>
 
 </html>

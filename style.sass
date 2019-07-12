@@ -289,12 +289,11 @@ section
     .progress-bar
       border-radius: 30px
       height: 10px
-      width: 80%
+      transition: width 0.7s
       background: linear-gradient( 90deg, rgb(222,129,60) 0%, rgb(63,81,154) 100%)
     .bg-gray
       margin-top: -7px
       display: block
-      width: 100%
       background: #e0e0e0
   .girl
     height: 100%
@@ -336,6 +335,33 @@ section
         color: #040404
         cursor: pointer
 
+.section-offer
+  position: relative
+  min-height: 600px
+  .bg-gray
+    background: #f4f4f4
+  .gradient-block
+    background: linear-gradient( 135deg, rgb(222,129,60) 0%, rgb(63,81,154) 100%)
+  .top
+    z-index: 1
+    padding: 70px 0
+    min-height: 600px
+  .bot
+    z-index: -1
+    position: absolute
+  .white
+    background: #ffffff
+  .gradient
+    background: linear-gradient( 135deg, rgb(222,129,60) 0%, rgb(63,81,154) 100%)
+
+
+[data-aos="grow"]
+  width: 0
+  transition-property: width
+  &.aos-animate
+    width: 80%
+  &.aos-animate.bg-gray
+    width: 100%
 
 @media only screen and (max-width: 450px)
   .main-header-text
@@ -366,7 +392,6 @@ section
 @media only screen and (max-height: 768px)
   .cards
     margin-top: -10vh
-  .section-amazing-features
     
 
 @media only screen and (max-width: 992px)
@@ -389,3 +414,6 @@ section
     .girl
       position: static
       min-height: 600px
+  .section-offer
+    .bot
+      display: none
