@@ -2,7 +2,12 @@
   font-family: 'Bernadette'
   src: url(../fonts/bernadette.ttf) format("truetype")
   font-weight: normal 
-  font-style: normal 
+  font-style: normal
+@font-face 
+  font-family: 'Myraid'
+  src: url("../fonts/Myriad Pro Black Condensed.otf") format("opentype")
+  font-weight: normal 
+  font-style: normal  
 html
   scroll-behavior: smooth
 body 
@@ -74,6 +79,11 @@ section
 
 .btn
   font-size: 16px
+  font-weight: bold
+  text-transform: uppercase
+  height: 40px
+  border: 0
+  border-radius: 25px
 
 .main-header-button .btn
   height: 40px
@@ -82,8 +92,8 @@ section
 .btn-white
   background: #fff
   color: #040404
-  font-weight: bold
-  text-transform: uppercase
+  margin: auto
+  font-size: 15px
 
 .cards
   margin-top: -25vh
@@ -289,8 +299,10 @@ section
     .progress-bar
       border-radius: 30px
       height: 10px
-      transition: width 0.7s
+      transition: all 0.7s
       background: linear-gradient( 90deg, rgb(222,129,60) 0%, rgb(63,81,154) 100%)
+      .grow
+        width: 80%
     .bg-gray
       margin-top: -7px
       display: block
@@ -338,6 +350,7 @@ section
 .section-offer
   position: relative
   min-height: 600px
+  margin-bottom: 0
   .bg-gray
     background: #f4f4f4
   .gradient-block
@@ -350,10 +363,71 @@ section
     z-index: -1
     position: absolute
   .white
+    h1
+      font-size: 40px
     background: #ffffff
+    padding: 5%
+    h4
+      font-size: 22px
+      color: #040404
   .gradient
+    color: #fff
+    font-size: 18px
+    padding: 5%
+    padding-bottom: 10px
     background: linear-gradient( 135deg, rgb(222,129,60) 0%, rgb(63,81,154) 100%)
+    ul
+      list-style-type: none
+      margin-top: 50px
+      margin-left: 20px
+    li
+      font-weight: bold
+      font-size: 16px
+      margin: 15px 0
+    h1
+      font-family: 'Myraid'
+      font-size: 55px
+      color: #fff
+    .btn
+      margin-top: 25%
 
+  .text
+    p
+      font-size: 16px
+    h1
+      margin-bottom: 20%
+
+.section-contacts
+  margin-top: 0
+  background: url("../img/bg_get_in_touch.jpg") center no-repeat
+  background-size: cover
+  font-size: 30px
+  height: 100%
+  padding: 50px
+  h1
+    text-align: center
+    color: #fff
+  a
+    margin: 0 20px
+    color: #fff
+    text-decoration: none
+    div
+      width: 75px
+      height: 75px
+      display: inline-block
+      border-radius: 45px
+      border: 2px #fff solid
+      margin: auto
+      position: relative
+      i
+        width: 100%
+        position: absolute
+        top: 27%
+        left: 25%
+        margin-left: -25%
+  .buttons
+    margin-top: 2%
+  margin-bottom: 0
 
 [data-aos="grow"]
   width: 0
@@ -414,6 +488,3 @@ section
     .girl
       position: static
       min-height: 600px
-  .section-offer
-    .bot
-      display: none

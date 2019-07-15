@@ -5,6 +5,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Myraid';
+  src: url("../fonts/Myriad Pro Black Condensed.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -105,6 +112,11 @@ section {
 
 .btn {
   font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  height: 40px;
+  border: 0;
+  border-radius: 25px;
 }
 
 .main-header-button .btn {
@@ -115,8 +127,8 @@ section {
 .btn-white {
   background: #fff;
   color: #040404;
-  font-weight: bold;
-  text-transform: uppercase;
+  margin: auto;
+  font-size: 15px;
 }
 
 .cards {
@@ -394,10 +406,14 @@ section {
 .section-designer .bars .progress-bar {
   border-radius: 30px;
   height: 10px;
-  -webkit-transition: width 0.7s;
-  transition: width 0.7s;
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
   background: -webkit-gradient(linear, left top, right top, from(#de813c), to(#3f519a));
   background: linear-gradient(90deg, #de813c 0%, #3f519a 100%);
+}
+
+.section-designer .bars .progress-bar .grow {
+  width: 80%;
 }
 
 .section-designer .bars .bg-gray {
@@ -466,6 +482,7 @@ section {
 .section-offer {
   position: relative;
   min-height: 600px;
+  margin-bottom: 0;
 }
 
 .section-offer .bg-gray {
@@ -489,10 +506,97 @@ section {
 
 .section-offer .white {
   background: #ffffff;
+  padding: 5%;
+}
+
+.section-offer .white h1 {
+  font-size: 40px;
+}
+
+.section-offer .white h4 {
+  font-size: 22px;
+  color: #040404;
 }
 
 .section-offer .gradient {
+  color: #fff;
+  font-size: 18px;
+  padding: 5%;
+  padding-bottom: 10px;
   background: linear-gradient(135deg, #de813c 0%, #3f519a 100%);
+}
+
+.section-offer .gradient ul {
+  list-style-type: none;
+  margin-top: 50px;
+  margin-left: 20px;
+}
+
+.section-offer .gradient li {
+  font-weight: bold;
+  font-size: 16px;
+  margin: 15px 0;
+}
+
+.section-offer .gradient h1 {
+  font-family: 'Myraid';
+  font-size: 55px;
+  color: #fff;
+}
+
+.section-offer .gradient .btn {
+  margin-top: 25%;
+}
+
+.section-offer .text p {
+  font-size: 16px;
+}
+
+.section-offer .text h1 {
+  margin-bottom: 20%;
+}
+
+.section-contacts {
+  margin-top: 0;
+  background: url("../img/bg_get_in_touch.jpg") center no-repeat;
+  background-size: cover;
+  font-size: 30px;
+  height: 100%;
+  padding: 50px;
+  margin-bottom: 0;
+}
+
+.section-contacts h1 {
+  text-align: center;
+  color: #fff;
+}
+
+.section-contacts a {
+  margin: 0 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.section-contacts a div {
+  width: 75px;
+  height: 75px;
+  display: inline-block;
+  border-radius: 45px;
+  border: 2px #fff solid;
+  margin: auto;
+  position: relative;
+}
+
+.section-contacts a div i {
+  width: 100%;
+  position: absolute;
+  top: 27%;
+  left: 25%;
+  margin-left: -25%;
+}
+
+.section-contacts .buttons {
+  margin-top: 2%;
 }
 
 [data-aos="grow"] {
@@ -573,9 +677,6 @@ section {
   .section-designer .girl {
     position: static;
     min-height: 600px;
-  }
-  .section-offer .bot {
-    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
